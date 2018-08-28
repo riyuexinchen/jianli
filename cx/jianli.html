@@ -39,6 +39,9 @@
 				height:50px;
 				border:0px solid #f00;
 				transform-style:preserve-3d;	
+				
+			}
+			.zhong:hover{
 				animation:second 2s linear infinite;
 			}
 			.ge{
@@ -55,14 +58,23 @@
 				transform:translateZ(24px);
 				border:0px solid #f00;
 			}
-			.back{
+			.front1{
 				background-image:url(image/jian.png);
+				transform:translateZ(24px);
+				border:0px solid #f00;
+			}
+			.back{
+				
 				transform:rotateX(180deg) translateZ(24px);
 			}
 			.left{
 				transform:rotateY(-90deg) translateZ(24px);
 			}
 			.right{
+				transform:rotateY(90deg) translateZ(24px);
+			}
+			.right1{
+				background-image:url(image/jian.png);
 				transform:rotateY(90deg) translateZ(24px);
 			}
 			@keyframes second{
@@ -151,18 +163,18 @@
 		<div class="container">
 			<div class="zuo">
 				<div class="zhong">
-					<div class="ge front">个</div>
-					<div class="ge left">人</div>
-					<div class="ge back"></div>
-					<div class="ge right">历</div>
+					<div class="ge front1"></div>
+					<div class="ge left">历</div>
+					<div class="ge back">个</div>
+					<div class="ge right">人</div>
 				</div>
 			</div>
 			<div class="you">
 				<div class="zhong">
-					<div class="ge front">个</div>
-					<div class="ge left">人</div>
-					<div class="ge back"></div>
-					<div class="ge right">历</div>
+					<div class="ge front">历</div>
+					<div class="ge left">个</div>
+					<div class="ge back">人</div>
+					<div class="ge right1"></div>
 				</div>
 			</div>
 		<div class="row">
