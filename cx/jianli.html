@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+	<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>个人简历</title>	
+	<link href="font-awesome/css/font-awesome.css" rel="stylesheet"/>
+	<link href="font-awesome/css/bootstrap.min.css" rel="stylesheet"/>
+		<style>
+			@keyframes first{
+				0%  {transform:rotateY(0deg) rotateX(0deg) rotateZ(0deg);}
+				25% {transform:rotateY(90deg) rotateX(90deg) rotateZ(0deg);}
+				50% {transform:rotateY(180deg) rotateX(180deg) rotateZ(0deg);}
+				75% {transform:rotateY(270deg) rotateX(270deg) rotateZ(0deg);}
+				100%{transform:rotateY(360deg) rotateX(360deg) rotateZ(0deg);}
+			}
+			.zuo{
+				position:fixed;
+				top:60px;
+				left:0px;
+				width:100px;
+				height:100px;
+				border:0px solid #f00;
+				perspective:500px;
+			}
+			.you{
+				position:fixed;
+				top:60px;
+				right:0px;
+				width:100px;
+				height:100px;
+				border:0px solid #f00;
+				perspective:500px;
+			}
+			.zhong{
+				margin:24px;
+				width:50px;
+				height:50px;
+				border:0px solid #f00;
+				transform-style:preserve-3d;	
+				animation:second 2s linear infinite;
+			}
+			.ge{
+				width:50px;
+				height:50px;
+				border:0px solid #f00;
+				position:absolute;
+				background-color:#fff;
+				text-align:center;
+				line-height:50px;
+				font-size:40px;
+			}
+			.front{
+				transform:translateZ(24px);
+				border:0px solid #f00;
+			}
+			.back{
+				background-image:url(image/jian.png);
+				transform:rotateX(180deg) translateZ(24px);
+			}
+			.left{
+				transform:rotateY(-90deg) translateZ(24px);
+			}
+			.right{
+				transform:rotateY(90deg) translateZ(24px);
+			}
+			@keyframes second{
+				0%  {transform:rotateY(0deg);}
+				25% {transform:rotateY(90deg);}
+				50% {transform:rotateY(180deg);}
+				75% {transform:rotateY(270deg);}
+				100%{transform:rotateY(360deg);}
+			}
+			.row{	
+				border:1px solid #000;
+				background-image:url("image/beijing.png")
+			}	
+			.bb{
+					border:0px solid #00f;
+					margin:auto;
+					border-radius:25px;
+					width:140px;
+					height:200px;
+					background-image:url("image/touxiang.jpg");				
+				}
+			.bbb{	
+				border:0px solid #00f;
+				line-height:30px;
+				list-style-type:none;
+			}
+			.cc:hover{
+				box-shadow:10px 10px 5px #888888;
+				background-color:#e0e0e0;
+			}
+			.c2{
+				border-radius:25px;
+				border:1px solid #fff;
+			}	
+			.c3{
+				border-radius:25px;
+				border:1px solid #fff;
+			}	
+			.c4{
+				border-radius:25px;
+				border:1px solid #fff;
+			}				
+			.c11{
+				margin:20px 0px 0px 0px;
+				float:left;
+				width:50px;
+				height:50px;
+				border:0px solid #0f0;
+				text-align:center;
+				line-height:50px;
+				font-size:39px;	
+			}
+			.c12{
+				border:0px solid #f00;
+				margin:10px 0px 0px 20px;
+				font-size:15px;
+				line-height:50px;
+			}
+			.zi{
+				
+			}
+			.c11:hover{
+					border-radius:25px;
+					box-shadow:10px 10px 5px #888888;
+					background-color:#f8f8f8;
+					animation:second 2s;
+			}
+			.c2:hover{
+					border-radius:25px;
+					box-shadow:10px 10px 5px #888888;
+					background-color:#e0e0e0;
+			}
+			.c3:hover{
+					border-radius:25px;
+					box-shadow:10px 10px 5px #888888;
+					background-color:#e0e0e0;
+			}
+			.c4:hover{
+					border-radius:25px;
+					box-shadow:10px 10px 5px #888888;
+					background-color:#e0e0e0;
+			}
+		</style>
+	</head>
+    <body>
+		<div class="container">
+			<div class="zuo">
+				<div class="zhong">
+					<div class="ge front">个</div>
+					<div class="ge left">人</div>
+					<div class="ge back"></div>
+					<div class="ge right">历</div>
+				</div>
+			</div>
+			<div class="you">
+				<div class="zhong">
+					<div class="ge front">个</div>
+					<div class="ge left">人</div>
+					<div class="ge back"></div>
+					<div class="ge right">历</div>
+				</div>
+			</div>
+		<div class="row">
+	<div class="col-xs-12 col-md-3" > 
+			<div class="bb">
+				<!--假装有照片-->
+			</div>
+			<ul class="bbb">
+			
+				<i class="cc fa fa-address-card-o" aria-hidden="true">
+					姓名：&nbsp陈晓
+				</i><br>
+				<i class="cc fa fa-mars" aria-hidden="true">
+					性别：&nbsp男
+				</i><br>
+				<i class="cc fa fa-graduation-cap" aria-hidden="true">
+					学校：&nbsp&nbsp杭州电子科技大学信息工程学院（本科）
+				</i>
+				<i class="cc fa fa-user-circle-o" aria-hidden="true">
+					政治面貌：共青团员
+				</i>
+				<i class="cc fa fa-university" aria-hidden="true">
+					所在地：&nbsp杭州
+				</i>
+				<i class="cc fa fa-mobile" aria-hidden="true">
+					联系电话：187-5885-1377
+				</i>
+				<i class="cc fa fa-envelope" aria-hidden="true">
+					联系邮箱：815793632@qq.com
+				</i>
+			</ul>
+	</div>
+	
+	<div class="col-xs-12 col-md-9">
+		<div class="c2">
+				<div class="c11">个</div>
+				<div class="c11">人</div>
+				<div class="c11">简</div>
+				<div class="c11">历</div>
+				<br><br><br><div class="c12">求职意向：JAVA开发工程师</div>
+		</div>
+			<div class="c2">
+					<legend class="titles">&nbsp&nbsp教育经历</legend>
+					<p>2018.07-2018.09&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp杭州电子科技大学信息工程学院
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp通信工程（本科）
+					<br>主修课程：信号与系统,数字电路,单片机原理与应用,C语言,模拟电子电路,通信原理,
+					DSP芯片原理与应用,电路分析			
+					</p>
+				</div>
+			<div class="c2">
+					<legend class="titles">&nbsp&nbsp实习经历</legend>					
+					<p>2017.07-2017.08&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp中国银行&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp实习生
+					<br>&nbsp&nbsp&nbsp&nbsp负责对来银行的人做一些简单的引导，然后是简单了解银行的一些工作情况
+					</p>
+				</div>
+			<div class="c3">
+					<legend class="titles">&nbsp&nbsp校园经历</legend>
+					<p>
+						2015.09-2018.05
+						<br>1.参与的暑假社会实践获得优秀
+						<br>2.参与校内社联三项比赛
+						<br>3.完成了对单片机的简单处理
+						<br>4.简单的完成了60s计时器的设计
+					</p>
+				</div>
+			<div class="c4">
+					<legend class="titles">&nbsp&nbsp掌握技能</legend>
+					<p>
+						熟练运用office、JAVA相关软件。简单运用ORCAD,以及MATLAB目前正在学习使用MySql、JDBC、
+						HTML、CSS、JavaScript。
+					</p>
+			</div>
+			<div class="c2">
+				<legend class="titles">&nbsp&nbsp自我评价</legend>
+					<p>
+						&nbsp&nbsp&nbsp&nbsp本人性格随和乐观，积极向上，爱好广泛，喜欢钻研，工作认真负责，
+						拥有较强的组织能力和适应能力，并具有良好的身体素质。乐于沟通，易于融入集体，
+						乐于助人，学习能力较好，注重理论与实践相结合，在工作中不断提高专业知识之余，
+						同时也在不断地提高做人、做事的能力，争取将工作做得更好，争取做更好的自己&nbsp！
+					</p>
+			</div>
+	</div>		
+</div>	
+	</body>
+</html>		
